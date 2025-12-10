@@ -1,0 +1,11 @@
+# Ignorar archivos innecesarios en Vercel
+node_modules
+.git
+.DS_Store
+*.log
+abrir.bat
+prowi Logo_Original.png
+Logo AndesPOS 2021_Original (3).png
+API Engine de Promociones.pdf
+Presentación Mantendedor de Promociones Prowi.pdf
+Captura de pantalla*.png

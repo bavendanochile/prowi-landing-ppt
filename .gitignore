@@ -1,0 +1,31 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+~*
+
+# Archivos originales (ya copiados a assets/images)
+prowi Logo_Original.png
+Logo AndesPOS 2021_Original (3).png
+API Engine de Promociones.pdf
+API_Engine_Promociones view.pdf
+Presentación Mantendedor de Promociones Prowi.pdf
+
+# Capturas de pantalla
+Captura de pantalla*.png
+
+# Archivos de desarrollo
+abrir.bat
+node_modules/
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

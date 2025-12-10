@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(copy \"c:\\Users\\barba\\Downloads\\Manual prowi (1).pdf\" \"docs\\Manual_ProWi.pdf\")",
+      "Bash(copy \"c:\\Users\\barba\\Downloads\\Requisitos POS para uso de ProWi.pdf\" \"docs\\Requisitos_POS_ProWi.pdf\")",
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(start \"\" \"index.html\")",
+      "WebFetch(domain:andespos.com)",
+      "Bash(copy:*)",
+      "Bash(cp:*)",
+      "Bash(python -m http.server:*)",
+      "Bash(git --version:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

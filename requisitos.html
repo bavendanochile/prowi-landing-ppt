@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos Técnicos - ProWi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="assets/images/prowi-logo.png" alt="ProWi" class="logo" style="height: 50px;">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#caracteristicas">Características</a></li>
+                <li><a href="index.html#ejemplos">Ejemplos</a></li>
+                <li><a href="index.html#integraciones">Integraciones</a></li>
+                <li><a href="index.html#contacto" class="btn-nav">Solicitar Demo</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section Requisitos -->
+    <section class="hero-technical">
+        <div class="container">
+            <div class="hero-tech-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a> / Documentación Técnica
+                </div>
+                <h1 class="hero-tech-title">
+                    Requisitos Técnicos y <span class="highlight">Roadmap</span>
+                </h1>
+                <p class="hero-tech-subtitle">
+                    Información detallada para integrar ProWi con tu sistema POS
+                </p>
+                <div class="hero-tech-badges">
+                    <span class="tech-badge">🔌 WebSocket API</span>
+                    <span class="tech-badge">⚡ &lt;100ms respuesta</span>
+                    <span class="tech-badge">🖥️ Ejecución Local</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requisitos del Sistema POS -->
+    <section class="requirements-detail">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">REQUISITOS TÉCNICOS</span>
+                <h2>¿Qué necesita tu Sistema POS?</h2>
+                <p class="section-subtitle">Para aprovechar al máximo ProWi</p>
+            </div>
+
+            <div class="requirements-grid">
+                <div class="req-category">
+                    <h3 class="req-category-title required">
+                        <span class="req-icon">⚠️</span>
+                        Requisitos Obligatorios
+                    </h3>
+                    <p class="req-category-desc">Estos elementos son esenciales para la integración básica</p>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">01</div>
+                        <div class="req-content">
+                            <h4>Catálogo de Productos</h4>
+                            <p>Base de datos con listado completo de productos incluyendo:</p>
+                            <ul>
+                                <li>Código único del producto (SKU o código interno)</li>
+                                <li>Nombre del producto</li>
+                                <li>Precio de venta</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">02</div>
+                        <div class="req-content">
+                            <h4>Capacidad de Integración</h4>
+                            <p>El sistema debe poder comunicarse con ProWi mediante alguno de estos métodos:</p>
+                            <ul>
+                                <li><strong>API REST:</strong> endpoints para consultar productos y aplicar descuentos</li>
+                                <li><strong>WebSocket:</strong> comunicación en tiempo real (recomendado)</li>
+                                <li><strong>Transferencia de archivos:</strong> intercambio mediante archivos CSV/JSON</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">03</div>
+                        <div class="req-content">
+                            <h4>Información de Venta en Tiempo Real</h4>
+                            <p>Capacidad de enviar a ProWi:</p>
+                            <ul>
+                                <li>Lista de productos en el carrito actual</li>
+                                <li>Cantidades de cada producto</li>
+                                <li>Identificador de la caja/terminal (opcional pero recomendado)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="req-category">
+                    <h3 class="req-category-title optional">
+                        <span class="req-icon">✨</span>
+                        Requisitos Opcionales
+                    </h3>
+                    <p class="req-category-desc">Estos elementos potencian las capacidades de ProWi y permiten promociones más sofisticadas</p>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">04</div>
+                        <div class="req-content">
+                            <h4>Categorías de Productos</h4>
+                            <p>Clasificación de productos por categorías (Ej: Lácteos, Bebidas, Snacks)</p>
+                            <p class="benefit-note">📈 <strong>Permite:</strong> Crear promociones del tipo "20% en toda la categoría Bebidas"</p>
+                        </div>
+                    </div>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">05</div>
+                        <div class="req-content">
+                            <h4>Información de Sucursales</h4>
+                            <p>Identificador único de cada sucursal o punto de venta</p>
+                            <p class="benefit-note">📈 <strong>Permite:</strong> Promociones específicas por ubicación geográfica</p>
+                        </div>
+                    </div>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">06</div>
+                        <div class="req-content">
+                            <h4>Categorías de Clientes</h4>
+                            <p>Clasificación de clientes (VIP, Mayorista, Frecuente, etc.)</p>
+                            <p class="benefit-note">📈 <strong>Permite:</strong> Ofertas exclusivas según perfil del cliente</p>
+                        </div>
+                    </div>
+
+                    <div class="req-detail-item">
+                        <div class="req-number">07</div>
+                        <div class="req-content">
+                            <h4>Información de Medios de Pago</h4>
+                            <p>Método de pago seleccionado (Efectivo, Débito, Crédito, etc.)</p>
+                            <p class="benefit-note">📈 <strong>Permite:</strong> Descuentos según forma de pago (próximamente)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama de Secuencia -->
+            <div class="integration-diagram-section">
+                <h3>Diagrama de Secuencia - Flujo de Integración</h3>
+                <div class="sequence-diagram">
+                    <div class="sequence-actors">
+                        <div class="actor">
+                            <div class="actor-icon">🖥️</div>
+                            <div class="actor-label">Sistema POS</div>
+                        </div>
+                        <div class="actor">
+                            <div class="actor-icon">🧠</div>
+                            <div class="actor-label">Engine ProWi<br><small>(Local)</small></div>
+                        </div>
+                        <div class="actor">
+                            <div class="actor-icon">👤</div>
+                            <div class="actor-label">Cajero</div>
+                        </div>
+                    </div>
+
+                    <div class="sequence-flow">
+                        <div class="sequence-step">
+                            <div class="step-timeline">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="step-description">
+                                <span class="step-num">1.</span>
+                                <strong>Cliente compra productos</strong>
+                                <p>Cajero escanea productos en el POS</p>
+                            </div>
+                        </div>
+
+                        <div class="sequence-step">
+                            <div class="step-timeline">
+                                <div class="timeline-dot active"></div>
+                                <div class="timeline-line active"></div>
+                            </div>
+                            <div class="step-description">
+                                <span class="step-num">2.</span>
+                                <strong>POS → Engine ProWi</strong>
+                                <p>WebSocket envía venta actual (JSON)</p>
+                                <code class="inline-code">ws://localhost:7357/venta/promocion</code>
+                                <span class="timing">&lt;10ms</span>
+                            </div>
+                        </div>
+
+                        <div class="sequence-step">
+                            <div class="step-timeline">
+                                <div class="timeline-dot active"></div>
+                                <div class="timeline-line active"></div>
+                            </div>
+                            <div class="step-description">
+                                <span class="step-num">3.</span>
+                                <strong>Engine calcula promociones</strong>
+                                <p>IA simbólica evalúa todas las promociones activas y selecciona la óptima</p>
+                                <span class="timing">&lt;100ms</span>
+                            </div>
+                        </div>
+
+                        <div class="sequence-step">
+                            <div class="step-timeline">
+                                <div class="timeline-dot active"></div>
+                                <div class="timeline-line active"></div>
+                            </div>
+                            <div class="step-description">
+                                <span class="step-num">4.</span>
+                                <strong>Engine → POS</strong>
+                                <p>Retorna promoción aplicable con beneficio calculado</p>
+                                <code class="inline-code">{ "beneficioTotal": 900, "promosAplicadas": [...] }</code>
+                                <span class="timing">&lt;5ms</span>
+                            </div>
+                        </div>
+
+                        <div class="sequence-step">
+                            <div class="step-timeline">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="step-description">
+                                <span class="step-num">5.</span>
+                                <strong>POS aplica descuento</strong>
+                                <p>Descuento se refleja automáticamente en pantalla</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sequence-summary">
+                        <div class="summary-item">
+                            <strong>⏱️ Tiempo total:</strong> &lt;120ms
+                        </div>
+                        <div class="summary-item">
+                            <strong>🔒 Protocolo:</strong> WebSocket (WS)
+                        </div>
+                        <div class="summary-item">
+                            <strong>📍 Ubicación:</strong> localhost:7357
+                        </div>
+                    </div>
+                </div>
+                <div class="flow-note-box">
+                    ✨ <strong>ProWi se ejecuta localmente</strong> en el PC para máxima velocidad y seguridad. No requiere conexión a internet para funcionar.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PRÓXIMAMENTE</span>
+                <h2>Roadmap de Desarrollo</h2>
+                <p class="section-subtitle">Nuevas funcionalidades en desarrollo</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker done"></div>
+                    <div class="timeline-content">
+                        <h4>Motor de Promociones Core</h4>
+                        <p>Sistema base con IA simbólica, cálculo automático de mejor promoción, y tipos de descuento: porcentual, monto fijo, precio final</p>
+                        <span class="timeline-status completed">✓ Completado</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker done"></div>
+                    <div class="timeline-content">
+                        <h4>Integración con AndesPOS</h4>
+                        <p>Integración completa con sistema POS AndesPOS para minimarkets y retail via WebSocket</p>
+                        <span class="timeline-status completed">✓ Completado</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker done"></div>
+                    <div class="timeline-content">
+                        <h4>Panel de Administración Web</h4>
+                        <p>Interfaz web completa con wizard de 6 pasos para crear promociones: vigencia, ubicaciones, clientes, restricciones por categoría/producto, reglas de cálculo y resumen</p>
+                        <span class="timeline-status completed">✓ Completado</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <h4>Descuentos por Medio de Pago</h4>
+                        <p>Promociones automáticas según método de pago: efectivo, débito, crédito, transferencia</p>
+                        <span class="timeline-status in-progress">🔄 En Desarrollo</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Sistema de Fidelización</h4>
+                        <p>Programa de puntos y recompensas para clientes frecuentes con acumulación automática</p>
+                        <span class="timeline-status upcoming">📅 Q2 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Cupones de Descuento</h4>
+                        <p>Gestión de cupones digitales, códigos promocionales y ofertas personalizadas por cliente</p>
+                        <span class="timeline-status upcoming">📅 Q2 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Analíticas Avanzadas</h4>
+                        <p>Dashboard con métricas de desempeño, ROI de promociones, análisis de comportamiento de clientes</p>
+                        <span class="timeline-status upcoming">📅 Q3 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Integración con más Sistemas POS</h4>
+                        <p>Conectores para los principales sistemas POS del mercado chileno y latinoamericano</p>
+                        <span class="timeline-status upcoming">📅 Continuo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentación Descargable -->
+    <section class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DOCUMENTACIÓN</span>
+                <h2>Recursos Técnicos</h2>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">🔌</div>
+                    <h3>API Engine de Promociones</h3>
+                    <p>Documentación técnica de la API WebSocket para integrar ProWi con tu sistema POS</p>
+                    <a href="docs/API_Engine_Promociones.pdf" download class="btn btn-secondary">Descargar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">🔧</div>
+                    <h3>Requisitos POS</h3>
+                    <p>Especificaciones técnicas detalladas de requisitos obligatorios y opcionales</p>
+                    <a href="docs/Requisitos_POS_ProWi.pdf" download class="btn btn-secondary">Descargar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">🖥️</div>
+                    <h3>Presentación Panel Admin</h3>
+                    <p>Guía visual del administrador web de promociones con wizard de 6 pasos</p>
+                    <a href="Presentación Mantendedor de Promociones Prowi.pdf" download class="btn btn-secondary">Descargar PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para integrar ProWi?</h2>
+                <p>Agenda una llamada con nuestro equipo técnico para revisar tu caso específico</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contacto" class="btn btn-primary btn-large">Contactar Equipo Técnico</a>
+                    <a href="index.html" class="btn btn-secondary btn-large">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/prowi-logo.png" alt="ProWi" class="logo" style="height: 50px; margin-bottom: 10px;">
+                    <p>Motor de Promociones con Inteligencia Artificial</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="index.html#caracteristicas">Características</a></li>
+                            <li><a href="index.html#ejemplos">Ejemplos</a></li>
+                            <li><a href="index.html#beneficios">Beneficios</a></li>
+                            <li><a href="docs/Manual_ProWi.pdf" download>Manual de Uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="requisitos.html">Requisitos Técnicos</a></li>
+                            <li><a href="index.html#integraciones">Integraciones</a></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="mailto:contacto@prowi.cl">contacto@prowi.cl</a></li>
+                            <li><a href="index.html#contacto">Solicitar Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProWi. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProWi - Motor de Promociones con IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/images/prowi-logo.png" alt="ProWi" class="logo" style="height: 50px;">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#ejemplos">Ejemplos</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#integraciones">Integraciones</a></li>
+                <li><a href="#contacto" class="btn-nav">Solicitar Demo</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Motor de Promociones <span class="highlight">Inteligente</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Calcula automáticamente la mejor promoción para cada venta usando Inteligencia Artificial Simbólica
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Automático</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">&lt;100ms</div>
+                        <div class="stat-label">Tiempo de Cálculo</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Errores Humanos</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
+                    <a href="#caracteristicas" class="btn btn-secondary">Ver más</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="promo-card card-animate">
+                    <div class="promo-header">
+                        <span class="promo-badge">AUTOMÁTICO</span>
+                    </div>
+                    <div class="promo-body">
+                        <h3>50% descuento</h3>
+                        <p>En el producto de menor valor</p>
+                        <div class="promo-products">
+                            <div class="product-item">Leche 1L <span>$1.200</span></div>
+                            <div class="product-item">Pan Molde <span>$2.500</span></div>
+                            <div class="product-item highlight">Queso 200g <span class="discount">$1.800</span> <span class="final">$900</span></div>
+                        </div>
+                    </div>
+                    <div class="promo-applied">✓ Promoción Aplicada</div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ¿Qué es ProWi? -->
+    <section class="what-is" id="que-es">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SOLUCIÓN INTELIGENTE</span>
+                <h2>¿Qué es ProWi?</h2>
+                <p class="section-subtitle">Una solución revolucionaria para la gestión de promociones</p>
+            </div>
+            <div class="what-is-content">
+                <div class="what-is-text">
+                    <p class="lead">
+                        ProWi es una solución de software basada en <strong>Inteligencia Artificial Simbólica</strong>, diseñada para
+                        calcular automáticamente la mejor promoción aplicable a cada venta.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="icon">🎯</span>
+                            <div>
+                                <strong>Maximiza el beneficio del cliente</strong>
+                                <p>Selecciona siempre la promoción más ventajosa disponible</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">⚡</span>
+                            <div>
+                                <strong>Procesamiento en tiempo real</strong>
+                                <p>Cálculo instantáneo antes de finalizar la venta</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">🤖</span>
+                            <div>
+                                <strong>Totalmente automático</strong>
+                                <p>Sin intervención del cajero ni del cliente</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">📊</span>
+                            <div>
+                                <strong>Reglas comerciales flexibles</strong>
+                                <p>Personaliza criterios según tu negocio</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="what-is-diagram">
+                    <div class="flow-diagram">
+                        <div class="flow-step">
+                            <div class="flow-icon">🛒</div>
+                            <h4>Venta Iniciada</h4>
+                            <p>Cliente agrega productos al carrito</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="flow-icon">🧠</div>
+                            <h4>IA Analiza</h4>
+                            <p>ProWi evalúa todas las promociones</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="flow-icon">✨</div>
+                            <h4>Mejor Oferta</h4>
+                            <p>Se aplica automáticamente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CARACTERÍSTICAS</span>
+                <h2>Potencia y Flexibilidad</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>Por Productos</h3>
+                    <p>Crea promociones para ítems específicos o combinaciones de productos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📂</div>
+                    <h3>Por Categorías</h3>
+                    <p>Aplica descuentos a categorías completas de productos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Por Sucursales</h3>
+                    <p>Promociones específicas para ubicaciones determinadas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Por Tipo de Cliente</h3>
+                    <p>Ofertas exclusivas para clientes VIP, mayoristas o frecuentes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Criterios Combinados</h3>
+                    <p>Mezcla múltiples condiciones para promociones sofisticadas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Estadísticas en Tiempo Real</h3>
+                    <p>Monitorea el desempeño de tus promociones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos Interactivos -->
+    <section class="examples" id="ejemplos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TIPOS DE PROMOCIONES</span>
+                <h2>Ejemplos Reales en Minimarket</h2>
+                <p class="section-subtitle">Haz clic en cada tipo de promoción para ver cómo funciona con productos reales</p>
+            </div>
+
+            <div class="example-selector">
+                <button class="example-btn active" data-example="ejemplo1">Descuento Porcentual</button>
+                <button class="example-btn" data-example="ejemplo2">Precio Fijo del Pack</button>
+                <button class="example-btn" data-example="ejemplo3">Monto Fijo</button>
+                <button class="example-btn" data-example="ejemplo4">Producto Gratis</button>
+            </div>
+
+            <div class="example-content">
+                <!-- Ejemplo 1 -->
+                <div class="example-panel active" id="ejemplo1">
+                    <div class="example-left">
+                        <h3>Descuento Porcentual al Producto de Menor Precio</h3>
+                        <p class="example-description">
+                            Cuando el cliente compra productos lácteos, el de menor valor recibe un descuento porcentual automáticamente.
+                        </p>
+                        <div class="promo-rule">
+                            <strong>Regla:</strong> "Compra 3 productos lácteos y lleva el de menor valor con 50% de descuento"
+                        </div>
+                        <div class="benefit-box">
+                            <strong>💡 Beneficio:</strong> Incentiva compras múltiples aumentando el ticket promedio,
+                            pero limita el impacto al afectar solo el producto más económico. Ideal para rotación de inventario.
+                        </div>
+                    </div>
+                    <div class="example-right">
+                        <div class="calculation-box">
+                            <h4>Cálculo Automático</h4>
+                            <table class="calc-table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Descuento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Leche entera 1L</td>
+                                        <td>$1.200</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pan de molde</td>
+                                        <td>$2.500</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>Queso laminado 200g</td>
+                                        <td><span class="strikethrough">$1.800</span></td>
+                                        <td class="discount-value">-$900 (50%)</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="total-row">
+                                        <td colspan="2"><strong>Total a Pagar</strong></td>
+                                        <td><strong>$4.600</strong></td>
+                                    </tr>
+                                    <tr class="savings-row">
+                                        <td colspan="2">Cliente ahorra</td>
+                                        <td>$900</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplo 2 -->
+                <div class="example-panel" id="ejemplo2">
+                    <div class="example-left">
+                        <h3>Pack a Precio Fijo</h3>
+                        <p class="example-description">
+                            Combo de productos a un precio atractivo predefinido. Ideal para promover kits de desayuno, asado, o canastas temáticas.
+                        </p>
+                        <div class="promo-rule">
+                            <strong>Regla:</strong> "Pack Desayuno Completo a precio fijo: $5.990"
+                        </div>
+                        <div class="benefit-box">
+                            <strong>💡 Beneficio:</strong> Mensaje claro y directo al cliente.
+                            Fácil de comunicar en cartelería y permite controlar márgenes con precisión.
+                        </div>
+                    </div>
+                    <div class="example-right">
+                        <div class="calculation-box">
+                            <h4>Comparación de Precios</h4>
+                            <table class="calc-table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Normal</th>
+                                        <th>En Pack</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Café 500g</td>
+                                        <td>$3.200</td>
+                                        <td rowspan="3" class="pack-price">$5.990<br><small>(pack completo)</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leche 1L</td>
+                                        <td>$1.200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pan Hallulla x6</td>
+                                        <td>$1.890</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="total-row">
+                                        <td><strong>Total Normal</strong></td>
+                                        <td>$6.290</td>
+                                        <td>$5.990</td>
+                                    </tr>
+                                    <tr class="savings-row">
+                                        <td colspan="2">Cliente ahorra</td>
+                                        <td>$300 (5%)</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplo 3 -->
+                <div class="example-panel" id="ejemplo3">
+                    <div class="example-left">
+                        <h3>Descuento por Monto Fijo</h3>
+                        <p class="example-description">
+                            Al comprar productos de una categoría específica, se aplica un descuento en pesos directo sobre el total.
+                        </p>
+                        <div class="promo-rule">
+                            <strong>Regla:</strong> "Compra 4 bebidas y recibe $500 de descuento directo"
+                        </div>
+                        <div class="benefit-box">
+                            <strong>💡 Beneficio:</strong> Mensaje directo y fácil de entender.
+                            El cliente percibe ahorro concreto en pesos. Perfecto para liquidación de stock.
+                        </div>
+                    </div>
+                    <div class="example-right">
+                        <div class="calculation-box">
+                            <h4>Descuento Aplicado</h4>
+                            <table class="calc-table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Coca-Cola 1.5L x2</td>
+                                        <td>$3.200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jugo Watts 1L</td>
+                                        <td>$1.290</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agua Mineral 2L</td>
+                                        <td>$900</td>
+                                    </tr>
+                                    <tr class="subtotal-row">
+                                        <td><strong>Subtotal</strong></td>
+                                        <td><strong>$5.390</strong></td>
+                                    </tr>
+                                    <tr class="discount-row">
+                                        <td>Descuento 4 Bebidas</td>
+                                        <td class="discount-value">-$500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="total-row">
+                                        <td><strong>Total a Pagar</strong></td>
+                                        <td><strong>$4.890</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplo 4 -->
+                <div class="example-panel" id="ejemplo4">
+                    <div class="example-left">
+                        <h3>Lleva 2, Paga 1</h3>
+                        <p class="example-description">
+                            El cliente compra productos específicos y recibe uno o más completamente gratis. El segundo producto no tiene costo.
+                        </p>
+                        <div class="promo-rule">
+                            <strong>Regla:</strong> "Compra 2 chocolates y lleva el segundo gratis"
+                        </div>
+                        <div class="benefit-box">
+                            <strong>💡 Beneficio:</strong> Altísima atracción psicológica.
+                            La palabra "GRATIS" genera más conversión que cualquier descuento. Perfecto para impulsar ventas de productos con buen margen.
+                        </div>
+                    </div>
+                    <div class="example-right">
+                        <div class="calculation-box">
+                            <h4>Beneficio del Cliente</h4>
+                            <table class="calc-table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chocolate Sahne-Nuss 100g</td>
+                                        <td>$1.490</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>Chocolate Sahne-Nuss 100g <span class="free-badge">GRATIS</span></td>
+                                        <td><span class="strikethrough">$1.490</span> <span class="free-text">$0</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="total-row">
+                                        <td><strong>Total a Pagar</strong></td>
+                                        <td><strong>$1.490</strong></td>
+                                    </tr>
+                                    <tr class="savings-row">
+                                        <td>Cliente se lleva</td>
+                                        <td>2 chocolates</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">BENEFICIOS</span>
+                <h2>¿Por qué elegir ProWi?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Incremento en Ventas</h3>
+                    <p>Oferta promocional más efectiva que impulsa la conversión y el ticket promedio</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Aplicación Automática</h3>
+                    <p>Sin depender de que el cliente o el cajero recuerden la promoción</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✅</div>
+                    <h3>Cero Errores</h3>
+                    <p>Elimina errores manuales en la aplicación de descuentos</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">😊</div>
+                    <h3>Mejor Experiencia</h3>
+                    <p>El cliente siempre recibe la mejor oferta disponible, aumentando su fidelidad</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏱️</div>
+                    <h3>Tiempo Real</h3>
+                    <p>Cálculo instantáneo en menos de 100ms sin afectar la velocidad de atención</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Máxima Precisión</h3>
+                    <p>IA simbólica garantiza la selección óptima en cada transacción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integraciones -->
+    <section class="requirements" id="integraciones">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">INTEGRACIONES</span>
+                <h2>Integrado con Sistemas POS Líderes</h2>
+                <p class="section-subtitle">ProWi se conecta con los principales puntos de venta del mercado</p>
+            </div>
+
+            <div class="pos-integrations">
+                <div class="pos-card">
+                    <img src="assets/images/andespos-logo.png" alt="AndesPOS" class="pos-logo">
+                    <h3>AndesPOS</h3>
+                    <p>Sistema POS integral diseñado para minimarkets, botillerías, farmacias y más. Integración completa con ProWi para aplicación automática de promociones.</p>
+                    <div class="pos-features">
+                        <span class="pos-badge">✓ Integración Activa</span>
+                        <span class="pos-badge">✓ Tiempo Real</span>
+                    </div>
+                    <a href="https://andespos.com" target="_blank" class="btn-pos-link">Conocer más →</a>
+                </div>
+
+                <div class="pos-card coming-soon">
+                    <div class="pos-placeholder">
+                        <div class="pos-icon">🔌</div>
+                    </div>
+                    <h3>Más integraciones próximamente</h3>
+                    <p>Estamos trabajando en conectar ProWi con más sistemas POS. ¿Usas otro sistema? Contáctanos para una integración personalizada.</p>
+                    <a href="#contacto" class="btn-pos-link">Solicitar integración →</a>
+                </div>
+            </div>
+
+            <div class="integration-cta">
+                <h3>¿Quieres integrar tu sistema POS con ProWi?</h3>
+                <p>Revisa los requisitos técnicos y nuestro roadmap de desarrollo</p>
+                <a href="requisitos.html" class="btn btn-secondary">Ver Requisitos Técnicos →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para revolucionar tus promociones?</h2>
+                <p>Solicita una demo personalizada y descubre cómo ProWi puede transformar tu negocio</p>
+                <div class="cta-buttons">
+                    <a href="mailto:contacto@prowi.cl" class="btn btn-primary btn-large">Solicitar Demo</a>
+                    <a href="requisitos.html" class="btn btn-secondary btn-large">Ver Documentación Técnica</a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <span>✓</span> Demo gratuita
+                    </div>
+                    <div class="cta-feature">
+                        <span>✓</span> Soporte técnico incluido
+                    </div>
+                    <div class="cta-feature">
+                        <span>✓</span> Integración personalizada
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/prowi-logo.png" alt="ProWi" class="logo" style="height: 50px; margin-bottom: 10px;">
+                    <p>Motor de Promociones con Inteligencia Artificial</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="#caracteristicas">Características</a></li>
+                            <li><a href="#ejemplos">Ejemplos</a></li>
+                            <li><a href="#beneficios">Beneficios</a></li>
+                            <li><a href="docs/API_Engine_Promociones.pdf" download>API WebSocket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="requisitos.html">Requisitos Técnicos</a></li>
+                            <li><a href="#integraciones">Integraciones</a></li>
+                            <li><a href="requisitos.html#roadmap">Roadmap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="mailto:contacto@prowi.cl">contacto@prowi.cl</a></li>
+                            <li><a href="#contacto">Solicitar Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProWi. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
