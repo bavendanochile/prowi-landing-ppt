@@ -2,9 +2,16 @@
 
 Landing page dinámica e interactiva para ProWi, el Motor de Promociones con Inteligencia Artificial.
 
+## 🌐 URLs del Proyecto
+
+- **Sitio Web Público:** https://prowi.vercel.app
+- **Sitio Interno (Info & Documentación):** https://prowi-landing-ppt-v61x.vercel.app/
+
 ## 📋 Descripción
 
 Esta landing page está diseñada para presentar ProWi de manera atractiva y profesional, destacando sus características principales, beneficios y casos de uso mediante ejemplos interactivos.
+
+**Propuesta de Valor:** ProWi elimina el trabajo manual de crear combos en el POS. Se integra a tu punto de venta actual para aplicar promociones automáticamente sin crear productos falsos ni rebajar stock manualmente.
 
 ## ✨ Características
 
@@ -17,47 +24,67 @@ Esta landing page está diseñada para presentar ProWi de manera atractiva y pro
 ### Secciones Incluidas
 
 1. **Hero Section**
-   - Título impactante con estadísticas
-   - Tarjeta de ejemplo animada
+   - Nueva propuesta de valor: "Basta de Perder Tiempo con Combos Manuales"
+   - Enfoque en el dolor del cliente (crear combos manualmente)
+   - Estadísticas: 2 min crear promoción, 100% automático, 0 errores
+   - Tarjeta de ejemplo animada (Combo Desayuno)
    - Call-to-action prominente
 
-2. **¿Qué es ProWi?**
-   - Descripción del producto
-   - Características clave
-   - Diagrama de flujo del proceso
+2. **El Problema (NUEVO)**
+   - Comparación visual ANTES vs DESPUÉS
+   - Destaca el trabajo manual actual (crear productos falsos, rebajar stock)
+   - Muestra la solución con ProWi (portal web, integración automática)
 
-3. **Características**
+3. **¿Qué es ProWi?**
+   - Clarifica que ProWi NO es un POS, se integra al POS actual
+   - Portal web para crear promociones en 2 minutos
+   - Diagrama de flujo: Crear Regla → Se Integra → Se Aplica Sola
+
+4. **Características**
    - Grid de 6 características principales
-   - Iconos visuales
-   - Hover effects
+   - Enfocadas en la integración con el POS actual
+   - Iconos visuales y hover effects
 
-4. **Tipos de Descuentos**
-   - 4 tipos de descuentos explicados
-   - Ejemplos visuales
-   - Estado de desarrollo (Próximamente)
-
-5. **Ejemplos Interactivos**
-   - 4 casos de uso con cálculos detallados
-   - Tabs para cambiar entre ejemplos
-   - Tablas comparativas
+5. **Ejemplos Interactivos (RENOVADOS)**
+   - **Combo Desayuno**: Café + Sandwich + Jugo (50% en el más barato)
+   - **Pack Fiesta**: Botillería - Pisco + Bebidas + Hielo a precio fijo $10.990
+   - **Promo Care**: Productos de belleza capilar Dove (4 productos, $1.500 descuento)
+   - **Happy Hour**: 2x1 en tragos L-J 18:00-20:00 (Piscolas)
+   - Botones con nombres comerciales + tipo de regla
+   - Diseño optimizado para caber en una pantalla
+   - Responsive para móviles
 
 6. **Beneficios**
-   - 6 beneficios clave
+   - 6 beneficios clave enfocados en ahorro de tiempo y eliminar errores
    - Cards con animaciones
 
-7. **Requisitos Técnicos**
-   - Lista de requisitos del POS
-   - Diagrama de integración
+7. **Integraciones**
+   - Sistema de login para proteger información técnica (NUEVO)
+   - AndesPOS integrado
+   - Link a requisitos técnicos
 
-8. **Roadmap**
-   - Timeline de desarrollo
-   - Estado de cada feature
+8. **Sistema de Login (NUEVO)**
+   - Protege documentación técnica y roadmap
+   - Credenciales: demo/demo2024, prowi-admin/ProWi2025!, andespos/AndesPOS2025
+   - Sesiones de 24 horas
+   - Archivos: `login.html` y `assets/js/auth.js`
 
-9. **CTA Final**
-   - Botones de acción
-   - Links a documentación
+9. **Requisitos Técnicos (Protegido con Login)**
+   - Lista detallada de requisitos del POS
+   - Diagrama de secuencia de integración
+   - Roadmap actualizado Q1-Q4 2026
 
-10. **Footer**
+10. **Roadmap (Protegido con Login)**
+    - Q1 2026: Analíticas Avanzadas
+    - Q2 2026: Cupones de Descuento
+    - Q3 2026: Descuentos por Medio de Pago
+    - Q4 2026: Sistema de Fidelización
+
+11. **CTA Final**
+    - Botones de acción
+    - Links a documentación protegida
+
+12. **Footer**
     - Links de navegación
     - Información de contacto
 
@@ -73,21 +100,29 @@ Esta landing page está diseñada para presentar ProWi de manera atractiva y pro
 - ✅ Animación de timeline
 - ✅ Easter egg en consola
 - ✅ Modo debug (Ctrl+Shift+D)
+- ✅ **Sistema de autenticación con localStorage (NUEVO)**
+- ✅ **Protección de páginas sensibles (NUEVO)**
+- ✅ **Gestión de sesiones de 24 horas (NUEVO)**
 
 ## 📁 Estructura del Proyecto
 
 ```
 PROWI/
-├── index.html              # Página principal
+├── index.html              # Página principal (landing comercial)
+├── login.html              # Página de login (NUEVO)
+├── requisitos.html         # Documentación técnica protegida (NUEVO)
 ├── assets/
 │   ├── css/
 │   │   └── styles.css      # Estilos principales
 │   ├── js/
-│   │   └── script.js       # JavaScript interactivo
+│   │   ├── script.js       # JavaScript interactivo
+│   │   └── auth.js         # Sistema de autenticación (NUEVO)
 │   └── images/             # Carpeta para imágenes
 ├── docs/
 │   ├── Manual_ProWi.pdf    # Manual de usos
-│   └── Requisitos_POS_ProWi.pdf  # Requisitos técnicos
+│   ├── Requisitos_POS_ProWi.pdf  # Requisitos técnicos
+│   ├── API_Engine_Promociones.pdf  # Documentación API
+│   └── Presentacion_Mantendedor_Promociones.pdf  # Presentación panel admin
 └── README.md               # Este archivo
 ```
 
@@ -108,6 +143,33 @@ npx http-server
 
 # Luego abre http://localhost:8000 en tu navegador
 ```
+
+## 🔐 Sistema de Autenticación
+
+### Credenciales de Acceso
+Para acceder a la documentación técnica y roadmap:
+
+| Usuario | Contraseña | Propósito |
+|---------|------------|-----------|
+| `demo` | `demo2024` | Demo general |
+| `prowi-admin` | `ProWi2025!` | Administración ProWi |
+| `andespos` | `AndesPOS2025` | Cliente AndesPOS |
+
+### Gestionar Usuarios
+Para agregar o modificar usuarios, edita `assets/js/auth.js`:
+
+```javascript
+const AUTHORIZED_USERS = {
+    'nuevo-usuario': 'contraseña123',
+    // ...más usuarios
+};
+```
+
+### Características de Seguridad
+- Sesiones de 24 horas en localStorage
+- Redirección automática si no está autenticado
+- Botón de logout en páginas protegidas
+- Validación de credenciales antes de dar acceso
 
 ## 🎨 Personalización
 
