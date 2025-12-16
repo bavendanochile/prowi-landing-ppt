@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Sistema de autenticación -->
+    <script src="assets/js/auth.js"></script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -39,10 +42,10 @@
                     <a href="index.html">Inicio</a> / Documentación Técnica
                 </div>
                 <h1 class="hero-tech-title">
-                    Requisitos Técnicos y <span class="highlight">Roadmap</span>
+                    Documentación Técnica y <span class="highlight">Roadmap</span>
                 </h1>
                 <p class="hero-tech-subtitle">
-                    Información detallada para integrar ProWi con tu sistema POS
+                    Todo lo que necesitas saber para integrar ProWi con tu sistema
                 </p>
                 <div class="hero-tech-badges">
                     <span class="tech-badge">🔌 WebSocket API</span>
@@ -293,19 +296,11 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker active"></div>
-                    <div class="timeline-content">
-                        <h4>Descuentos por Medio de Pago</h4>
-                        <p>Promociones automáticas según método de pago: efectivo, débito, crédito, transferencia</p>
-                        <span class="timeline-status in-progress">🔄 En Desarrollo</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h4>Sistema de Fidelización</h4>
-                        <p>Programa de puntos y recompensas para clientes frecuentes con acumulación automática</p>
-                        <span class="timeline-status upcoming">📅 Q2 2025</span>
+                        <h4>Analíticas Avanzadas</h4>
+                        <p>Dashboard con métricas de desempeño, ROI de promociones, análisis de comportamiento de clientes</p>
+                        <span class="timeline-status upcoming">📅 Q1 2026</span>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -313,15 +308,23 @@
                     <div class="timeline-content">
                         <h4>Cupones de Descuento</h4>
                         <p>Gestión de cupones digitales, códigos promocionales y ofertas personalizadas por cliente</p>
-                        <span class="timeline-status upcoming">📅 Q2 2025</span>
+                        <span class="timeline-status upcoming">📅 Q2 2026</span>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h4>Analíticas Avanzadas</h4>
-                        <p>Dashboard con métricas de desempeño, ROI de promociones, análisis de comportamiento de clientes</p>
-                        <span class="timeline-status upcoming">📅 Q3 2025</span>
+                        <h4>Descuentos por Medio de Pago</h4>
+                        <p>Promociones automáticas según método de pago: efectivo, débito, crédito, transferencia</p>
+                        <span class="timeline-status upcoming">📅 Q3 2026</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Sistema de Fidelización</h4>
+                        <p>Programa de puntos y recompensas para clientes frecuentes con acumulación automática</p>
+                        <span class="timeline-status upcoming">📅 Q4 2026</span>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -386,7 +389,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="assets/images/prowi-logo-footer.png" alt="ProWi" class="logo" style="height: 50px; margin-bottom: 10px;">
-                    <p>Motor de Promociones con Inteligencia Artificial</p>
+                    <p>Promociones que funcionan solas. Ventas que crecen automáticamente.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -422,5 +425,9 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script>
+        // Proteger esta página al cargar
+        protectPage();
+    </script>
 </body>
 </html>
